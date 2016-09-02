@@ -1,0 +1,9 @@
+.page-company .ctn {margin: 130px auto 160px auto;}
+.page-company .ctn .img {position: absolute; right: 170px; bottom: 35px;}
+.page-company .ctn .wrap {-webkit-transform: translateX(-88px); -ms-transform: translateX(-88px); -o-transform: translateX(-88px); transform: translateX(-88px);}
+.page-company .ctn .title {margin-bottom: 0; color: #333; font-size: 25px; font-weight: bold; letter-spacing: 15px;}
+.page-company .ctn .en {display: inline-block; margin-top: 0; color: #313131; border-bottom: 1px solid #a0a0a0; font-size: 14px; letter-spacing: 2px;}
+.page-company .ctn .name {margin: 85px 0 30px; color: #585858; font-size: 18px;}
+.page-company .ctn .intro {margin-bottom: 60px; color: #666;font-size: 14px; line-height: 2;}
+.page-company .ctn .slogan {color: #8c8c8c;line-height: 1.8;}
+.page-company .ctn .slogan strong {color: #333;}

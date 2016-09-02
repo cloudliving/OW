@@ -1,0 +1,36 @@
+/* news */
+.page-news .news-list {margin: 130px 0 40px;}
+.page-news .pages {margin-bottom: 200px;}
+.page-news .pages a {display: inline-block; width: 80px; height: 25px; margin-left: 10px; border: 1px solid #e5e5e5; border-radius: 999em; line-height: 25px; text-align: center;}
+.page-news .pages a:hover,
+.page-news .pages .active {border-color: #00c0ff; background: #00c0ff;}
+.page-news .pages span {display: inline-block; width: 34px; height: 11px; background: url(../images/icons.png) no-repeat;}
+.page-news .pages .prev span {background-position: -74px -4px;}
+.page-news .pages .next span {background-position: -74px -20px;}
+.page-news .pages .prev:hover span,
+.page-news .pages .prev.active span {background-position: -124px -4px;}
+.page-news .pages .next:hover span,
+.page-news .pages .next.active span {background-position: -124px -20px;}
+
+/* article */
+.page-article .article {min-height: 900px; margin-top: 80px; padding-top: 60px;}
+.page-article .article p {margin: 0;}
+.page-article .article .hd {padding-bottom: 50px; border-bottom: 1px dashed #e5e5e5;}
+.page-article .article .title {margin-bottom: 10px; color: #333; font-size: 18px;}
+.page-article .article .date {margin: 0; color: #999; font-size: 12px;}
+.page-article .article .ctn {padding: 40px 0; color: #666; font-size: 14px;line-height: 2;}
+.page-article .article .ctn p {margin-bottom: 30px; text-indent: 2em;}
+.page-article .article .ctn p:last-child {margin-bottom: 0;}
+.page-article .article .ctn img {position: relative; left: 50%; max-width: 100%; margin-bottom: 30px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%);}
+
+@media screen and (max-width: 769px) {
+	.page-article .nav {padding: 0 30px; position: relative;}
+	.page-article .nav .logo {font-size: 0;}
+	.page-article .nav .links {display: none;}
+	.page-article .container {width: auto;}
+	.page-article .container-1 {width: auto !important; padding: 0 10px;}
+	.page-article .article {margin-top: 20px; min-height: 0;}
+	.page-article .article .hd {padding-bottom: 25px;}
+	.page-article .article .ctn {padding: 25px 0; font-size: 14px;}
+	.page-article .ft {text-align: center;}
+}

@@ -1,0 +1,47 @@
+.page-project .ctn {margin: 130px auto 60px auto; color: #666; font-size: 14px; line-height: 2;}
+.page-project .ctn .img {position: absolute; right: 170px; top: 50%; margin-top: -175px;}
+.page-project .ctn .wrap {-webkit-transform: translateX(-88px); -ms-transform: translateX(-88px); -o-transform: translateX(-88px); transform: translateX(-88px);}
+.page-project .ctn .title {margin-bottom: 0; color: #333; font-size: 25px; font-weight: bold; letter-spacing: 27px;}
+.page-project .ctn .en {display: inline-block; margin-top: 0; color: #313131; border-bottom: 1px solid #a0a0a0; font-size: 14px; letter-spacing: 2px; margin-bottom: 70px;}
+.page-project .ctn .caption {margin: 20px 0; font-size: 16px; color: #333;}
+.page-project .ctn strong {font-weight: normal; color: #333;}
+
+
+
+.page-project .items {margin-bottom: 160px;}
+.page-project .items a {text-decoration: none;}
+.page-project .items .item {height: 200px; border-bottom: 1px solid #f0f0f0;}
+.page-project .items .icon {margin-left: 55px; padding-right: 55px; border-right: 1px solid transparent;}
+.page-project .items .info-wrap {padding-left: 30px; color: #808080; font-size: 12px; text-align: left;}
+.page-project .items .info-wrap p:first-child {margin-bottom: 22px; color: #4d4d4d; font-size: 18px;}
+.page-project .items .button {display: block; width: 42px; height: 42px; margin-right: 20px; color: #b3b3b3; border: 1px solid #e0e0e0; font-family: 'NSimSun'; line-height: 42px; text-align: center;}
+
+.page-project .items .item,
+.page-project .items .item .info-wrap p:first-child,
+.page-project .items .item .button {-webkit-transition: .4s all cubic-bezier(.215, .61, .355, 1); -o-transition: .4s all cubic-bezier(.215, .61, .355, 1); transition: .4s all cubic-bezier(.215, .61, .355, 1);}
+
+
+
+
+.page-project .items .item:hover {background: #f6f6f6;}
+.page-project .items .item:hover .info-wrap p:first-child {color: #00c0ff;}
+.page-project .items .item:hover .button {color: #fff; border-color: #00c0ff; background: #00c0ff; -webkit-transform: translateX(-50px); -ms-transform: translateX(-50px); -o-transform: translateX(-50px); transform: translateX(-50px);}
+.page-project .uk-modal {overflow-x: hidden;color: #8c8c8c;}
+
+
+.page-project .uk-modal {color: #666;}
+.page-project .uk-modal .uk-h2 {margin-bottom: 70px; color: #4d4d4d;}
+.page-project .uk-modal strong {margin-top: 40px; color: #8c8c8c;}
+.page-project .uk-modal em {color: #333;}
+.page-project .uk-modal .icon-close,
+.page-project .dialog .icon-close {top: 40px; right: 40px; width: 30px; height: 30px; background: url(../images/icon-close.png) no-repeat; border: none; cursor: pointer;}
+
+
+
+.page-project .toggle {position: absolute; top: 50%; right: 0; display: none; border: none; background: none; line-height: 90px;cursor: pointer; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
+.page-project .toggle p {margin: 0;}
+.page-project .toggle .text {position: absolute; left: 0; width: 102px; color: #333; border: 1px solid #f0f0f0;text-align: center;}
+.page-project .toggle .icon {position: relative; z-index: 2; width: 32px; border: 1px solid #f0f0f0;background: #fff;}
+
+.page-project .toggle:hover .text {left: -102px;}
+.page-project .toggle:hover .icon {color: #fff; border-color: transparent;background: #00c0ff;}
