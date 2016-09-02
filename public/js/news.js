@@ -1,6 +1,9 @@
 ;(function(){
 	var dom = {
-			newsWrap: $('.news-list')
+			newsWrap: $('.news-list'),
+			next: $('.next'),
+			prev: $('.prev'),
+			body: $('body')
 		},
 		url = {
 			news: 'http://tw.cloudliving.net/official_website.php?c=Index&a=news&action=news_list',
@@ -23,17 +26,47 @@
 							'</div>'+
 						'</a>'+
 					'</li>'+
-					'<!-- end data-repeat -->'
+					'<!-- end data-repeat -->',
+		page = 1, all, h = dom.newsWrap.scrollTop()
 
 	// 访问统计
 	dom.newsWrap.click(function(e){
-		var nid = $(e.target).parents().data('id')
+		var nid = $(e.target).parents('li').data('id')
 		nid && $.get(url.stat, {nid: nid})
 	})
 
 	$.get(url.news, function(res){
 		if (res.Code == 0) {
+			all = res.page_count
 			dom.newsWrap.append(template.format({news: res.result}))
 		}
 	}, 'json')
+
+	dom.next.click(function(e){
+		if (page < all) {
+			$.get(url.news, {page: page+1}, function(res){
+				page++
+				if (res.Code == 0) {
+					dom.body.animate({scrollTop: h}, 1000)
+					dom.newsWrap.html(template.format({news: res.result}))
+				}
+			})
+		} else {
+			UIkit.notify("没有了", {timeout: 1500});
+		}
+	})
+
+	dom.prev.click(function(e){
+		if (page > 0) {
+			$.get(url.news, {page: page-1}, function(res){
+				page--
+				if (res.Code == 0) {
+					dom.body.animate({scrollTop: h}, 1000)
+					dom.newsWrap.html(template.format({news: res.result}))
+				}
+			})
+		} else {
+			UIkit.notify("没有了", {timeout: 1500});
+		}
+	})
 })()

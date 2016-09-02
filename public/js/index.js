@@ -1,3 +1,14 @@
+// 浏览器检测
+;(function(){
+	var user = navigator.userAgent
+	if (user.match(/Chrome\/(\d+)/)[1] >= 50 || user.match(/Firefox\/(\d+)/)[1] >= 47) {
+		$('.hd').css('background-attachment', 'fixed')
+	}
+	// if (navigator.userAgent.search('') > -1) {
+	// 	UIkit.modal.alert("您当前使用的遨游浏览器不是最新版, 升级最新版获得最佳体验")
+	// }
+})()
+
 // slider
 ;(function(){
 	var 

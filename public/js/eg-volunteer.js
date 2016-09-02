@@ -97,7 +97,7 @@ var data = [
 					'<div data-repeat="x in datas">'+
 						'<div class="item">'+
 							'<div class="img-box"><img class="avatar" src="x.smallImg" alt=""></div>'+
-							'<p><span class="name">x.name</span><span class="age">x.age</span></p>'+
+							'<p><span class="name">x.name</span><span class="age">x.age岁</span></p>'+
 							'<p>x.organization</p>'+
 							'<p>x.slogan</p>'+
 						'</div>'+
@@ -121,7 +121,7 @@ var data = [
 
 		dom.dialog.avatar.attr('src', data[index]['bigImg'])
 		dom.dialog.name.text(data[index]['name'])
-		dom.dialog.age.text(data[index]['age'])
+		dom.dialog.age.text(data[index]['age']+'岁')
 		dom.dialog.organization.text(data[index]['organization'])
 		dom.dialog.slogan.text(data[index]['slogan'])
 		dom.dialog.deed.html(data[index]['deed'])

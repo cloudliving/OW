@@ -1,8 +1,8 @@
 /* news */
 .page-news .news-list {margin: 130px 0 40px;}
 .page-news .pages {margin-bottom: 200px;}
-.page-news .pages a {display: inline-block; width: 80px; height: 25px; margin-left: 10px; border: 1px solid #e5e5e5; border-radius: 999em; line-height: 25px; text-align: center;}
-.page-news .pages a:hover,
+.page-news .pages button {display: inline-block; width: 80px; height: 25px; margin-left: 10px; border: 1px solid #e5e5e5; cursor: pointer; border-radius: 999em; line-height: 25px; text-align: center;}
+.page-news .pages button:hover,
 .page-news .pages .active {border-color: #00c0ff; background: #00c0ff;}
 .page-news .pages span {display: inline-block; width: 34px; height: 11px; background: url(../images/icons.png) no-repeat;}
 .page-news .pages .prev span {background-position: -74px -4px;}
@@ -21,7 +21,7 @@
 .page-article .article .ctn {padding: 40px 0; color: #666; font-size: 14px;line-height: 2;}
 .page-article .article .ctn p {margin-bottom: 30px; text-indent: 2em;}
 .page-article .article .ctn p:last-child {margin-bottom: 0;}
-.page-article .article .ctn img {position: relative; left: 50%; max-width: 100%; margin-bottom: 30px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%);}
+.page-article .article .ctn img {position: relative; left: 50%; max-width: 100%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%);}
 
 @media screen and (max-width: 769px) {
 	.page-article .nav {padding: 0 30px; position: relative;}

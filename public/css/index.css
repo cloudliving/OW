@@ -7,7 +7,7 @@
 .page-index .u-title-1 span {border-color: #a6a6a6;}
 
 /* head */
-.page-index .hd {background: url('../images/banner.jpg') no-repeat center; background-attachment: fixed;}
+.page-index .hd {background: url('../images/banner.jpg') no-repeat center;}
 .page-index .hd .code {position: absolute; right: 30px; bottom: 30px;}
 
 /* our server */

@@ -20,6 +20,10 @@
 		if (res.Code == 0) {
 			console.log(template.format(res.result))
 			dom.wrap.append(template.format(res.result))
+
+			$('.ctn img').each(function(index, el){
+				$(this).parents('p').css('text-indent', 0)
+			})
 		}
 	}, 'json')
 })()

@@ -57,21 +57,21 @@ utils.parseSearch = function(){
 }
 
 // skip animation
-;(function(){
-	var body = $('body'),
-		a = $('a')
+// ;(function(){
+// 	var body = $('body'),
+// 		a = $('a')
 
-	setTimeout(function(){
-		body.removeClass('uk-animation-fade')
-	}, 850)
+// 	setTimeout(function(){
+// 		body.removeClass('uk-animation-fade')
+// 	}, 850)
 
-	a.click(function(e){
-		console.log(e.target.href)
-		if (!e.target.hasAttributes('j-dull')) {
-			body.addClass('leave')
-		}
-	})
-})()
+// 	a.click(function(e){
+// 		console.log(e.target.href)
+// 		if (!e.target.hasAttributes('j-dull')) {
+// 			body.addClass('leave')
+// 		}
+// 	})
+// })()
 
 // nav
 ;(function(){

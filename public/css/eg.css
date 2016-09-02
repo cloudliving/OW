@@ -4,7 +4,7 @@
 .page-eg .community .title {margin-bottom: 5px; color: #4d4d4d; font-size: 18px;}
 .page-eg .community .line {display: inline-block; width: 30px; height: 0; border-bottom: 1px solid #d8d8d8;}
 
-.page-eg .community .ctn {color: #808080; font-size: 14px; line-height: 2;}
+.page-eg .community .ctn {color: #666; font-size: 14px; line-height: 2;}
 .page-eg .community .ctn p {margin-bottom: 30px;}
 .page-eg .community .ctn p:last-child {margin-bottom: 0;}
 .page-eg .community .ctn img {display: block; width: 100%; margin-bottom: 30px;}
@@ -47,4 +47,4 @@
 .page-eg #dialog .hd p {margin: 0 0 10px 0;}
 .page-eg #dialog .name {color: #333;font-size: 18px;}
 .page-eg #dialog .age {margin-left: 20px;color: #333; font-size: 14px;}
-.page-eg #dialog .ctn {margin-top: 40px; padding-top: 40px; border-top: 1px dashed #e0e0e0;line-height: 2;}
+.page-eg #dialog .ctn {margin-top: 40px; padding-top: 40px; border-top: 1px dashed #e0e0e0;line-height: 2; color: #666;}
