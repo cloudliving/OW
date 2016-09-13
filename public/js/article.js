@@ -1,5 +1,8 @@
 ;(function(){
-	var dom = {wrap: $('.article')},
+	var dom = {
+			wrap: $('.article'),
+			title: $('title')
+		},
 		url = {
 			article: 'http://tw.cloudliving.net/official_website.php?c=Index&a=news&action=news_detail',
 			stat: 'http://tw.cloudliving.net/official_website.php?c=Index&a=news&action=news_browse_num_plus_one'
@@ -20,6 +23,7 @@
 		if (res.Code == 0) {
 			console.log(template.format(res.result))
 			dom.wrap.append(template.format(res.result))
+			dom.title.text(res.result.news_title)
 
 			$('.ctn img').each(function(index, el){
 				$(this).parents('p').css('text-indent', 0)

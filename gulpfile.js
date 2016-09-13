@@ -33,8 +33,10 @@ gulp.task('pre-replace', function(){
 			.pipe(build({
 				'css': '../public/css/ow.min.css'
 			}))
+
 			// 正式
 				.pipe(replace(/(\.\.\/){0,4}public/g, function(){return 'http://cloudliving-img.b0.upaiyun.com/static/Home/ow'}))
+
 			.pipe(gulp.dest('build/html'))
 })
 
@@ -45,9 +47,11 @@ gulp.task('move', function(){
 		.pipe(gulp.dest('build/public/images'))
 	gulp
 		.src('public/js/**')
+
 		// 正式
 			.pipe(replace(/(\.\.\/){0,4}public/g, function(){return 'http://cloudliving-img.b0.upaiyun.com/static/Home/ow'}))
 			.pipe(replace('tw.cloudliving.net', 'www.cloudliving.net'))
+			
 		.pipe(uglify())
 		.pipe(gulp.dest('build/public/js'))
 	gulp
