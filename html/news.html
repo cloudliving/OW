@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>新闻</title>
+	<title>资讯</title>
 	<link rel="stylesheet" href="../public/lib/uikit/css/uikit.min.css">
 	<link rel="stylesheet" href="../public/lib/uikit/css/components/notify.min.css">
 	<!-- build:css -->
@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="../public/css/news.css">
 	<!-- endbuild -->
 </head>
-<body class="page-news uk-animation-fade">
+<body class="page-news uk-animation-fade" id="app">
 	
 	<!-- nav -->
 	<div class="nav nav-1 uk-flex uk-flex-center uk-flex-middle transition">
@@ -22,7 +22,7 @@
 			<li><a href="index.html">首页</a></li>
 			<li><a href="project.html">项目</a></li>
 			<li><a href="company.html">公司</a></li>
-			<li class="active"><a href="news.html">新闻</a></li>
+			<li class="active"><a href="news.html">资讯</a></li>
 			<li data-uk-dropdown>
 				<a href="#" j-dull>案例</a>
 			    <div class="uk-dropdown">
@@ -38,6 +38,13 @@
 	<div class="child-banner" style="background-image: url(../public/images/news-banner.jpg)"></div>
 
 	<div class="container container-1">
+		<div class="tags">
+			<button class="all">全部</button>
+			<button>云智动态</button>
+			<button>云智关注</button>
+			<button>媒体报告</button>
+			<button>公告</button>
+		</div>
 		<ul class="news-list news-list-1" data-uk-scrollspy="{cls:'uk-animation-slide-left', target:'.item', delay:300}"></ul>
 		<div class="pages uk-flex uk-flex-right">
 			<div>
@@ -54,9 +61,16 @@
 
 
 	<script src="../public/lib/jquery.min.js"></script>
+	<script src="../public/lib/vue.js"></script>
 	<script src="../public/lib/uikit/js/uikit.min.js"></script>
 	<script src="../public/lib/uikit/js/components/notify.min.js"></script>
 	<script src="../public/js/common.js"></script>
-	<script src="../public/js/news.js"></script>
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data: {}
+		})
+	</script>
+	<!-- <script src="../public/js/news.js"></script> -->
 </body>
 </html>

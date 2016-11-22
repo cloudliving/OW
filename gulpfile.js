@@ -56,6 +56,7 @@ gulp.task('move', function(){
 		.pipe(gulp.dest('build/public/js'))
 	gulp
 		.src('public/lib/**')
+		.pipe(uglify())
 		.pipe(gulp.dest('build/public/lib'))
 	return gulp
 		.src('public/media/**')
