@@ -52,11 +52,9 @@ gulp.task('move', function(){
 			.pipe(replace(/(\.\.\/){0,4}public/g, function(){return 'http://cloudliving-img.b0.upaiyun.com/static/Home/ow'}))
 			.pipe(replace('tw.cloudliving.net', 'www.cloudliving.net'))
 			
-		.pipe(uglify())
 		.pipe(gulp.dest('build/public/js'))
 	gulp
 		.src('public/lib/**')
-		.pipe(uglify())
 		.pipe(gulp.dest('build/public/lib'))
 	return gulp
 		.src('public/media/**')

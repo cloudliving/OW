@@ -39,17 +39,32 @@
 
 	<div class="container container-1">
 		<div class="tags">
-			<button class="all">全部</button>
-			<button>云智动态</button>
-			<button>云智关注</button>
-			<button>媒体报告</button>
-			<button>公告</button>
+			<button class="active" @click="toggleType($event)" data-type="0">全部</button>
+			<button v-for="item in typeList" @click="toggleType($event)" :data-type="item.id">{{item.type}}</button>
 		</div>
-		<ul class="news-list news-list-1" data-uk-scrollspy="{cls:'uk-animation-slide-left', target:'.item', delay:300}"></ul>
+		<p v-show="!newList" class="none">暂无内容</p>
+		<ul class="news-list news-list-1" data-uk-scrollspy="{cls:'uk-animation-slide-left', target:'.item', delay:300}">
+			<li class="item" data-id="item.id" v-for="item in newList">
+				<a @click="statis(item.id)" class="uk-flex" :href="'article.html?id='+item.id">
+					<div class="img-wrap">
+						<img :src="item.news_image" alt="" class="thumb">
+					</div>
+					<div class="ctn-wrap uk-flex-item-1">
+						<p class="title">{{item.news_title}}</p>
+						<p class="intro">{{item.news_brief}}</p>
+					</div>
+					<div class="info-wrap uk-hidden-small">
+						<p class="date">{{item.month_day}}</p>
+						<p class="year">{{item.year}}</p>
+						<span class="btn">→</span>
+					</div>
+				</a>
+			</li>
+		</ul>
 		<div class="pages uk-flex uk-flex-right">
 			<div>
-				<button href="javascript:" class="prev transition active" j-dull><span></span></button>
-				<button href="javascript:" class="next transition active" j-dull><span></span></button>
+				<button @click="prev" class="prev transition active" j-dull><span></span></button>
+				<button @click="next" class="next transition active" j-dull><span></span></button>
 			</div>
 		</div>
 	</div>
@@ -65,12 +80,6 @@
 	<script src="../public/lib/uikit/js/uikit.min.js"></script>
 	<script src="../public/lib/uikit/js/components/notify.min.js"></script>
 	<script src="../public/js/common.js"></script>
-	<script>
-		var vm = new Vue({
-			el: '#app',
-			data: {}
-		})
-	</script>
-	<!-- <script src="../public/js/news.js"></script> -->
+	<script src="../public/js/news.js"></script>
 </body>
 </html>
