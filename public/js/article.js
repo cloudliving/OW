@@ -4,8 +4,8 @@
 			title: $('title')
 		},
 		url = {
-			article: 'http://tw.cloudliving.net/official_website.php?c=Index&a=news&action=news_detail',
-			stat: 'http://tw.cloudliving.net/official_website.php?c=Index&a=news&action=news_browse_num_plus_one'
+			article: 'http://www.cloudliving.net/official_website.php?c=Index&a=news&action=news_detail',
+			stat: 'http://www.cloudliving.net/official_website.php?c=Index&a=news&action=news_browse_num_plus_one'
 		},
 		template = '<div class="hd uk-text-center">'+
 						'<p class="title">{#news_title#}</p>'+

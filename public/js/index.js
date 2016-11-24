@@ -60,12 +60,12 @@
 // logic
 ;(function(){
 	var url = {
-		news: 'http://tw.cloudliving.net/official_website.php?c=Index&a=news&action=home_page_news_list',
+		news: 'http://www.cloudliving.net/official_website.php?c=Index&a=news&action=home_page_news_list',
 		stat: {
-			ow: 'http://tw.cloudliving.net/official_website.php?c=Index&a=website&action=website_browse_num_plus_one&wbid=1',
-			click: 'http://tw.cloudliving.net/official_website.php?c=Index&a=news&action=news_click_num_plus_one'
+			ow: 'http://www.cloudliving.net/official_website.php?c=Index&a=website&action=website_browse_num_plus_one&wbid=1',
+			click: 'http://www.cloudliving.net/official_website.php?c=Index&a=news&action=news_click_num_plus_one'
 		},
-		form: 'http://tw.cloudliving.net/official_website.php?c=Index&a=website&action=submit_link_us'
+		form: 'http://www.cloudliving.net/official_website.php?c=Index&a=website&action=submit_link_us'
 	},
 	dom = {
 		newsWrap: $('.news-list'),

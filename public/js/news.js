@@ -9,7 +9,7 @@
 			curPage: 1,
 			allPage: 0,
 			typeUrl: 'http://www.cloudliving.net/official_website.php?c=Index&a=news&action=type_list',
-			statisUrl: 'http://tw.cloudliving.net/official_website.php?c=Index&a=news&action=news_click_num_plus_one'
+			statisUrl: 'http://www.cloudliving.net/official_website.php?c=Index&a=news&action=news_click_num_plus_one'
 		},
 		methods: {
 			toggleType: function (e) {
@@ -23,7 +23,6 @@
 				this.curPage > 1 ? 
 				this.curPage-- && this.load() :
 				UIkit.notify('没有了', {timeout: 1500})
-
 			},
 			next: function() {
 				this.curPage < this.allPage ? 
@@ -31,7 +30,7 @@
 				UIkit.notify('没有了', {timeout: 1500})
 			},
 			load: function () {
-				let that = this
+				var that = this
 				$.get(that.newUrl, function(r) {
 					that.newList = r.result
 					that.allPage = r.page_count
@@ -60,4 +59,4 @@
 		}
 	})
 
-})()
+})();
